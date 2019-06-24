@@ -1,0 +1,220 @@
+<resources>
+	
+	<style name="NestedScrollBarStyle">
+		<item name="android:scrollbarFadeDuration">2</item>
+		<item name="android:scrollbars">vertical</item>
+		<item name="android:fillViewport">true</item>
+		<item name="android:orientation">vertical</item>
+	</style>
+	
+	
+	<style name="SpinnerStyle">
+		<!-- Color when pressed -->
+		<!-- Default color for the dropdown arrow and line -->
+		<item name="android:textColor">@color/white</item>
+		<item name="android:textColorHint">@color/white_transparent_70</item>
+		<item name="colorControlNormal">#ffffff</item>
+		<!--<item name="background">@color/colorPrimary</item>-->
+	
+	</style>
+	
+	<style name="RegistrationItemParent">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginTop">10dp</item>
+		<item name="android:background">?selectableItemBackground</item>
+		<item name="android:minHeight">50dp</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:orientation">horizontal</item>
+	</style>
+	
+	<style name="RegistrationItemParent.NoTopMargin">
+		<item name="android:layout_marginTop">0dp</item>
+	</style>
+	
+	<style name="RegistrationItemValue">
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:gravity">left|center_vertical</item>
+		<item name="android:minHeight">40dp</item>
+		<item name="android:textStyle">italic</item>
+		<item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+		<item name="android:textColor">@color/carbon</item>
+	</style>
+	
+	<style name="RegistrationItemArrow">
+		<item name="android:layout_width">40dp</item>
+		<item name="android:layout_height">40dp</item>
+		<item name="android:padding">10dp</item>
+		<item name="android:scaleType">centerInside</item>
+	</style>
+	
+	<style name="RegistrationItemUnderline">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">1dp</item>
+		<item name="android:layout_marginLeft">20dp</item>
+		<item name="android:layout_marginRight">20dp</item>
+		<item name="android:background">@color/gray_transparent_70</item>
+	</style>
+	
+	<style name="DropDownItemValue">
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:gravity">left|center_vertical</item>
+		<item name="android:minHeight">40dp</item>
+		<item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+		<item name="android:textColor">@color/carbon</item>
+	</style>
+	
+	<style name="DropDownItemArrow">
+		<item name="android:layout_width">40dp</item>
+		<item name="android:layout_height">40dp</item>
+		<item name="android:padding">8dp</item>
+		<item name="android:tint">@color/colorAccent</item>
+		<item name="android:scaleType">centerInside</item>
+	</style>
+	
+	
+	<style name="ActivityParent">
+		<item name="android:orientation">vertical</item>
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">match_parent</item>
+		<item name="android:paddingBottom">50dp</item>
+		<item name="android:paddingLeft">20dp</item>
+		<item name="android:paddingRight">20dp</item>
+		<item name="android:paddingTop">20dp</item>
+	</style>
+	
+	
+	<style name="MenuItemParent">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:background">?selectableItemBackground</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:minHeight">40dp</item>
+		<item name="android:layout_marginTop">5dp</item>
+		<item name="android:orientation">horizontal</item>
+		<item name="android:paddingLeft">20dp</item>
+		<item name="android:paddingRight">20dp</item>
+	</style>
+	
+	<style name="MenuItemImage">
+		<item name="android:layout_width">20dp</item>
+		<item name="android:layout_height">20dp</item>
+		<item name="android:scaleType">centerInside</item>
+		<item name="android:tint">@color/white</item>
+	</style>
+	
+	<style name="MenuItemLabel">
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:paddingLeft">20dp</item>
+		<item name="android:minHeight">40dp</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+		<item name="android:textSize">18sp</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+	
+	<style name="MenuItemArrow">
+		<item name="android:layout_width">30dp</item>
+		<item name="android:layout_height">30dp</item>
+		<item name="android:rotation">180</item>
+		<item name="android:padding">3dp</item>
+		<item name="android:scaleType">centerInside</item>
+		<item name="android:tint">@color/text_hint</item>
+	</style>
+	
+	<style name="MenuItemUnderline">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">1px</item>
+		<item name="android:layout_marginLeft">20dp</item>
+		<item name="android:layout_marginRight">20dp</item>
+		<item name="android:background">@color/text_hint</item>
+	</style>
+	
+	<style name="HintAppearance" parent="@android:style/TextAppearance.Small">
+		<item name="android:textColorHint">@color/text_4</item>
+		<item name="android:textColor">@color/text_4</item>
+		<item name="android:textStyle">bold|italic</item>
+	</style>
+	
+	<style name="HintAppearance.Light" parent="@android:style/TextAppearance.Small">
+		<item name="android:textColor">@color/white</item>
+		<item name="android:textColorHint">@color/white</item>
+		<item name="android:textStyle">bold|italic</item>
+	</style>
+	
+	<style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+		<item name="android:textColorHint">@color/colorPrimary</item>
+		<item name="boxStrokeColor">@color/outline_color_list_light</item>
+	</style>
+	
+	<style name="TextInputLayout.Dark">
+		<item name="android:textColorHint">@color/colorPrimary</item>
+		<item name="boxStrokeColor">@color/outline_color_list_dark</item>
+	</style>
+	
+	<style name="MySwitch" parent="Theme.AppCompat.Light">
+		<item name="colorControlActivated">#C64228</item>
+		<item name="colorSwitchThumbNormal">#6C6C6C</item>
+		<item name="android:colorForeground">#CCCCCC</item>
+	</style>
+	
+	
+	<style name="OTPItem">
+		<item name="android:layout_width">40dp</item>
+		<item name="android:layout_height">40dp</item>
+		<item name="android:background">@drawable/circle_blue_click_large</item>
+		<item name="android:gravity">center</item>
+		<item name="android:inputType">number</item>
+		<item name="android:maxLength">1</item>
+		<item name="android:textCursorDrawable">@color/colorPrimaryDark</item>
+	</style>
+	
+	
+	<style name="DropDownParent">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_gravity">start</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:minHeight">45dp</item>
+		<item name="android:orientation">horizontal</item>
+	</style>
+	
+	<style name="DropDownItem">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:gravity">center_vertical|left</item>
+		<item name="android:minHeight">45dp</item>
+		<item name="android:minWidth">60dp</item>
+		<item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+		<item name="android:textColor">@color/text_4</item>
+	</style>
+	
+	<style name="DropDownArrow">
+		<item name="android:layout_width">25dp</item>
+		<item name="android:layout_height">25dp</item>
+		<item name="android:padding">5dp</item>
+		<item name="android:scaleType">centerInside</item>
+		<item name="android:tint">@color/colorPrimaryDark</item>
+	</style>
+	
+	<style name="TILEditText">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:background">@color/transparent</item>
+		<item name="android:inputType">textPersonName|textCapWords</item>
+		<item name="android:lines">1</item>
+		<item name="android:maxLines">1</item>
+		<item name="android:minHeight">45dp</item>
+		<item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+		<item name="android:textColor">@color/text_4</item>
+		<item name="android:textColorHint">@color/text_hint</item>
+		<item name="android:textSize">16sp</item>
+	</style>
+
+</resources>

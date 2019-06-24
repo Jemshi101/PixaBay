@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+	android:opacity="opaque"
+	android:paddingTop="150dp">
+	
+	<item>
+		<shape>
+			<size
+				android:width="320dp"
+				android:height="600dp" />
+			<solid android:color="@color/transparent" />
+		</shape>
+	</item>
+	
+	<item
+		android:bottom="20dp"
+		android:gravity="center"
+		android:left="20dp"
+		android:right="20dp"
+		android:top="20dp">
+		<bitmap
+			android:gravity="center"
+			android:src="@drawable/ic_logo_login" />
+	
+	</item>
+
+</layer-list>
