@@ -94,7 +94,7 @@ class SearchActivity : BaseActivity() {
         setMessageBox(binding.root, viewModel.showMessage)
 
 
-        binding.lytBase.setPadding(0, (getActionBarHeight() + getStatusBarHeight()).toInt(), 0, 0)
+        binding.lytBase.setPadding(0, (getActionBarHeight()/* + getStatusBarHeight()*/).toInt(), 0, 0)
 
         linearLayoutManager = LinearLayoutManager(this)
         linearLayoutManager.orientation = LinearLayoutManager.VERTICAL

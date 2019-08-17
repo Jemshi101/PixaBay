@@ -37,6 +37,7 @@
 				app:imageCircleUrl="@{NullCheckUtil.getNonNull(bean.userImageURL)}"
 				app:layout_constraintStart_toStartOf="parent"
 				app:layout_constraintTop_toTopOf="parent"
+				app:srcCompat="@drawable/com_facebook_profile_picture_blank_portrait"
 				tools:src="@tools:sample/avatars" />
 
 			<TextView

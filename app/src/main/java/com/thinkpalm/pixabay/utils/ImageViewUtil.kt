@@ -47,10 +47,9 @@ class ImageViewUtil {
 						.placeholder(R.drawable.placeholder_image)
 						.error(R.drawable.placeholder_image)
 						.fallback(R.drawable.placeholder_image)
-						.centerCrop()
 						.circleCrop()
 				)
-				.transition(DrawableTransitionOptions.withCrossFade())
+//				.transition(DrawableTransitionOptions.withCrossFade())
 				.into(imageView)
 		}
 
