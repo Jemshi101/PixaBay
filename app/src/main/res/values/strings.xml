@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	
-	<string name="api_key">AIzaSyD6wXgsQmFsvqGlcrylE964YfPWlVIUFV8</string>
-	<string name="btn_log_in">Log In</string>
-	<string name="label_email_address">Email Address</string>
-	<string name="label_password">Password</string>
-	<string name="message_please_enter_a_valid_email_address">Please Enter a Valid Email Address</string>
-    <string name="app_name">Orchid</string>
+    <string name="app_name">Pixabay</string>
+
+    <string name="api_key">AIzaSyD6wXgsQmFsvqGlcrylE964YfPWlVIUFV8</string>
+
+    <string name="action_view">View</string>
+
+    <string name="btn_log_in">Log In</string>
+
+    <string name="bind_x_comments">%s\nComments</string>
+    <string name="bind_x_likes">%s\nLikes</string>
+
+    <string name="label_1_min_ago">1 min ago</string>
+    <string name="label_email_address">Email Address</string>
+    <string name="label_hour_ago">hr ago</string>
+    <string name="label_min_ago">min ago</string>
+    <string name="label_password">Password</string>
+    <string name="label_remember_me">Remember Me</string>
+
+    <string name="message_please_enter_a_valid_email_address">Please Enter a Valid Email Address</string>
+    <string name="message_please_enter_the_password">Please enter the password</string>
+    <string name="btn_dismiss">Dismiss</string>
+
+
 </resources>

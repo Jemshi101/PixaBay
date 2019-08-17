@@ -2,10 +2,10 @@
 <paths xmlns:android="http://schemas.android.com/apk/res/android">
     <external-path
         name="files_root"
-        path="Android/data/com.thinkpalm.orchid_android"/>
+        path="Android/data/com.thinkpalm.pixabay"/>
     <external-path
         name="external_app_folder"
-        path="Orchid/"/>
+        path="Pixabay/"/>
     <external-path
         name="external_storage_root"
         path="."/>

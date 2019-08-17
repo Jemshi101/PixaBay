@@ -153,7 +153,7 @@
     <color name="bg_gradient_start">#F4821C</color>
     <color name="bg_login">#ff181818</color>
     <color name="bg_profile">#ff181818</color>
-    <color name="bg_splash">#ffffffff</color>
+    <color name="bg_splash">#2a2a2a</color>
     <color name="bg_white">#F3F8F6</color>
 
     <color name="underline_color">#8d8d8d</color>

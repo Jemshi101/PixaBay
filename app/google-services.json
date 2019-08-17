@@ -1,16 +1,16 @@
 {
   "project_info": {
     "project_number": "207829103854",
-    "firebase_url": "https://orchid-flutter.firebaseio.com",
-    "project_id": "orchid-flutter",
-    "storage_bucket": "orchid-flutter.appspot.com"
+    "firebase_url": "https://Pixabay-flutter.firebaseio.com",
+    "project_id": "Pixabay-flutter",
+    "storage_bucket": "Pixabay-flutter.appspot.com"
   },
   "client": [
     {
       "client_info": {
         "mobilesdk_app_id": "1:207829103854:android:66feb8665a8ead0c",
         "android_client_info": {
-          "package_name": "com.thinkpalm.orchid"
+          "package_name": "com.thinkpalm.Pixabay"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "207829103854-j5nk0d3rqpanrdrotu3rttogdq1mjfqo.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.thinkpalm.orchid",
+            "package_name": "com.thinkpalm.Pixabay",
             "certificate_hash": "06c28ab7b90e608b789bd1f477b88c53073442a7"
           }
         },
@@ -46,7 +46,7 @@
               "client_id": "207829103854-ompdbetkjr59tvj3jmngil7dr6l5hsrm.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.thinkpalm.orchid"
+                "bundle_id": "com.thinkpalm.Pixabay"
               }
             }
           ]
@@ -57,7 +57,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:207829103854:android:7ae6f957ea2d724d",
         "android_client_info": {
-          "package_name": "com.thinkpalm.orchid_android"
+          "package_name": "com.thinkpalm.pixabay"
         }
       },
       "oauth_client": [
@@ -85,7 +85,7 @@
               "client_id": "207829103854-ompdbetkjr59tvj3jmngil7dr6l5hsrm.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.thinkpalm.orchid"
+                "bundle_id": "com.thinkpalm.Pixabay"
               }
             }
           ]

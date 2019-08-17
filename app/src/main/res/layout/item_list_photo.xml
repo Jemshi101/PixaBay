@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.thinkpalm.pixabay.utils.NullCheckUtil" />
+
+        <variable
+            name="bean"
+            type="com.thinkpalm.pixabay.network.models.photolist.Photo" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_profile_photo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:scaleType="centerCrop"
+                app:imageCircleUrl="@{NullCheckUtil.getNonNull(bean.userImageURL)}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/txt_user_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_vertical"
+                android:minHeight="40dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@{NullCheckUtil.getNonNull(bean.user)}"
+                android:textColor="@color/carbon"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iv_profile_photo"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@tools:sample/full_names" />
+
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier_header"
+                android:layout_width="0dp"
+                android:layout_height="4dp"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="iv_profile_photo,txt_user_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:adjustViewBounds="true"
+                android:minHeight="200dp"
+                android:scaleType="fitCenter"
+                app:imageUrl="@{NullCheckUtil.getNonNull(bean.webformatURL)}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/barrier_header"
+                tools:src="@tools:sample/backgrounds/scenic" />
+
+            <TextView
+                android:id="@+id/txt_likes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_vertical"
+                android:minHeight="40dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@{@string/bind_x_likes(NullCheckUtil.getNonNull(bean.likes))}"
+                android:textColor="@color/carbon"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/txt_comments"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_photo"
+                tools:text="999\nLikes" />
+
+            <TextView
+                android:id="@+id/txt_comments"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_vertical|end"
+                android:minHeight="40dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@{@string/bind_x_comments(NullCheckUtil.getNonNull(bean.comments))}"
+                android:textColor="@color/carbon"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_likes"
+                app:layout_constraintTop_toBottomOf="@+id/iv_photo"
+                tools:text="999\nComments" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -20,7 +20,7 @@
 		android:top="20dp">
 		<bitmap
 			android:gravity="center"
-			android:src="@drawable/ic_logo_login" />
+			android:src="@drawable/logo" />
 	
 	</item>
 
