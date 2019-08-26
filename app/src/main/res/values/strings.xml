@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">Pixabay</string>
 
-    <string name="api_key">AIzaSyD6wXgsQmFsvqGlcrylE964YfPWlVIUFV8</string>
+    <string name="api_key">Google API Key/string>
 
     <string name="action_view">View</string>
 
